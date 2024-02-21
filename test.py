@@ -17,7 +17,7 @@ dt = '2013-10-20' # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format
 
 try:
     # Astronomy API
-    api_response = api_instance.astronomy(q, dt)
+    api_response = api_instance.future_weather(q)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling APIsApi->astronomy: %s\n" % e)
